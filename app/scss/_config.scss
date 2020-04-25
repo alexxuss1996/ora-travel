@@ -1,13 +1,18 @@
 // USER VARIABLES SECTION
 
-$accent: orange; // Accent Color
+$accent: #003a6c; // Accent Color
+
 $fontsize: 16px; // Body Font Size
 $textcolor: #333; // Text Color
-$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$roboto: Roboto, sans-serif; // Roboto Font Family
+$system: -apple-system,
+BlinkMacSystemFont,
+Arial,
+sans-serif; // System Font Family
+$roboto: Roboto,
+sans-serif; // Roboto Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 20px;
+$grid-gutter-width: 15px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
@@ -45,10 +50,17 @@ $gutter: $grid-gutter-width;
 	color: #fff;
 }
 
-input, textarea {
+input,
+textarea {
 	outline: none;
-	&:focus:required:invalid { border-color: red }
-	&:required:valid { border-color: green }
+
+	&:focus:required:invalid {
+		border-color: red
+	}
+
+	&:required:valid {
+		border-color: green
+	}
 }
 
 body {

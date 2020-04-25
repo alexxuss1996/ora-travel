@@ -1,5 +1,93 @@
 @import 'config';
 
-// CUSTOM USER STYLES & IMPORTS
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+}
 
+.header__topline {
+	font-family: 'Muli', sans-serif;
+	font-weight: normal;
+	min-height: 45px;
+	background-color: #131313;
+	color: #808080;
+	font-size: 14px;
+	padding: 10px 15px;
 
+	.topline__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+
+	a {
+		color: #808080;
+	}
+
+	.topline__contacts {
+		display: flex;
+		margin-right: 20px;
+		position: relative;
+
+		.contact__address {
+			margin: 0 20px;
+		}
+
+		.contact__mail {
+			margin-right: 25px;
+			position: relative;
+			display: inline-block;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				margin: 0 20px;
+				height: 20px;
+				width: 1px;
+				background-color: #474747
+			}
+		}
+	}
+
+	.topline__auth {
+		text-align: right;
+		position: relative;
+		padding-left: 20px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0 20px;
+			height: 20px;
+			width: 1px;
+			background-color: #474747
+		}
+
+		.auth__signin {
+			margin-left: 20px;
+			position: relative;
+		}
+	}
+
+	.fas {
+		margin-right: 12px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.header__topline {
+		.topline__contacts {
+			flex-direction: column;
+			text-align: left;
+
+			.contact__address {
+				margin: 0;
+			}
+		}
+	}
+}
